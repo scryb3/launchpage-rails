@@ -10,7 +10,7 @@ require 'csv'
   	if @user.save
   		flash[:success] = "POST save message"
   		redirect_to '/success'
-  		UserMailer.registration_confirmation(@user).deliver
+  		#UserMailer.registration_confirmation(@user).deliver
   	else 
   		render 'new'
   	end
@@ -24,10 +24,10 @@ require 'csv'
   	@users = User.all 
   	user_csv = CSV.generate do |csv|
   		#header row
-  		csv <<["Email", "UserType"]
+  		csv <<["Email", "UserType", "UserFeedback"]
   		#data row
 	  	@users.each do |user|
-  		csv <<[user.email, user.usertype]
+  		csv <<[user.email, user.usertype, user.feedback]
   		end	
   	end
   	send_data(user_csv, :type => 'text/csv', :filename => 'user_record.csv')

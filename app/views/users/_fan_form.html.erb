@@ -3,6 +3,7 @@
 	<p>Are you a Funder? We need your help and there are lots of other projects you could be supporting in a direct way, share your email address with us and we will update you when your beta program invitation is ready! </p>
 	<%= render 'shared/error_messages', object: f.object %>
 	<%= f.text_field :email, :placeholder => "Enter your email" %>
+	<%= f.text_field :feedback, :placeholder => "Please tell us what you think or tell us a time when this would have been useful in the past..." %>
 	<%= f.hidden_field :usertype, :value => "1" %>
 	<%= f.submit "Submit", class: "btn" %>
 	<p>Funders will get access to the pledging system and payment dashboard as they come online as well as exclusive early access to previews and demos.</p>
