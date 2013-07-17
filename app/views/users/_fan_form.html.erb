@@ -1,8 +1,9 @@
 <%= form_for(@user, :html => { :class => "fanForm"}) do |f| %>
-	<h2>User Type 1?</h2>
-	<p>Are you User Type 1? Here's some text telling you whether you should enter your email address below!</p>
+	<h2>Funder?</h2>
+	<p>Are you a Funder? We need your help and there are lots of other projects you could be supporting in a direct way, share your email address with us and we will update you when your beta program invitation is ready! </p>
 	<%= render 'shared/error_messages', object: f.object %>
 	<%= f.text_field :email, :placeholder => "Enter your email" %>
 	<%= f.hidden_field :usertype, :value => "1" %>
 	<%= f.submit "Submit", class: "btn" %>
+	<p>Funders will get access to the pledging system and payment dashboard as they come online as well as exclusive early access to previews and demos.</p>
 <% end %>
