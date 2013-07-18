@@ -11,3 +11,20 @@
  *= require_self
  *= require_tree .
 */
+@import "compass";
+
+header {
+	text-align: center;
+	margin: 30px 0;
+}
+
+body {background: #3d2d00; /* Old browsers */
+background: -moz-linear-gradient(left, #3d2d00 50%, #f05033 50%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(50%,#3d2d00), color-stop(50%,#f05033)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #3d2d00 50%,#f05033 50%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #3d2d00 50%,#f05033 50%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #3d2d00 50%,#f05033 50%); /* IE10+ */
+background: linear-gradient(to right, #3d2d00 50%,#f05033 50%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d2d00', endColorstr='#f05033',GradientType=1 ); /* IE6-9 */
+}
+

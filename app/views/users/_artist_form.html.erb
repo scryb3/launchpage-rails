@@ -3,8 +3,8 @@
 	<p>Are you a developer? Get updates on our project and regular donation reports made to your email address below!</p>
 	<%= render 'shared/error_messages', object: f.object %>
 	<%= f.text_field :email, :placeholder => "Enter your email" %>
-	<%= f.text_field :feedback, :placeholder => "Please tell us what you think or tell us a time when this would have been useful in the past..." %>
 	<%= f.hidden_field :usertype, :value => "2" %>
-	<%= f.submit "Submit", class: "btn" %>
+	<%= f.submit "Submit", class: "btn" %><br>
+	<%= f.text_field :feedback, :placeholder => "Please tell us what you think or tell us a time when this would have been useful in the past..." %>
 	<p>These reports will include validation of your published donation address(s) and the relative perfomance of donations by project.</p>
 <% end %>

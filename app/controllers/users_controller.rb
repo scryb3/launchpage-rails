@@ -32,4 +32,5 @@ require 'csv'
   	end
   	send_data(user_csv, :type => 'text/csv', :filename => 'user_record.csv')
   end
+
 end
